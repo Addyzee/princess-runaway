@@ -1,0 +1,11 @@
+services:
+  game:
+    build: .
+    image: princess-runaway:latest
+    container_name: princess-runaway
+    networks:
+      - smeazy-network
+
+networks:
+  smeazy-network:
+    external: true
